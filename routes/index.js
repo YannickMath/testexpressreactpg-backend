@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-
-/* GET home page. */
+// Définition des routes
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    res.send('Réponse de la route index');
 });
 
 module.exports = router;
